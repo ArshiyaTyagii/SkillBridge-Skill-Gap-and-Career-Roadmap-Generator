@@ -1,295 +1,240 @@
-# SkillBridge-Skill-Gap-and-Career-Roadmap-Generator
-
-# BUILD FROM SCRATCH: SKILLBRIDGE – INTELLIGENT SKILL GAP ANALYSIS AND CAREER ROADMAP GENERATOR
-
-I want you to act as a senior software engineer, system architect, and full-stack developer. Your task is to DESIGN, DEVELOP, TEST, DOCUMENT, and PUBLISH a complete software engineering project called:
-
 # SkillBridge
 ### Intelligent Skill Gap Analysis and Career Roadmap Generator
 
-This is not a request for a project idea, prototype explanation, or code snippets. I want you to build the entire working project from scratch, including the frontend, backend, algorithmic engine, database integration, documentation, and GitHub repository.
+**Bridging the gap between academic knowledge and industry-ready skills.**
 
-Do not stop after creating a plan. Implement the project.
+SkillBridge is an intelligent career guidance platform designed to help students identify skill gaps, understand industry requirements, and build personalized learning roadmaps for their desired career paths.
 
----
-
-## 1. PROJECT VISION
-
-SkillBridge is an intelligent career guidance platform designed to bridge the gap between academic knowledge and industry requirements.
-
-Students often have technical knowledge but do not know:
-- Which skills are required for their target job roles.
-- Which skills they are currently missing.
-- How closely their profiles match industry expectations.
-- What they should learn first.
-- Which projects can help them develop missing skills.
-
-SkillBridge should solve this problem through automated resume analysis, skill matching, gap detection, and personalized learning roadmaps.
-
-The platform should allow a student to upload a resume, choose a target career role, understand their skill gaps, and receive a structured roadmap to improve their employability.
-
-Build this as a serious Computer Engineering project with meaningful algorithmic implementation.
+By combining **C++, Data Structures and Algorithms, Python, Natural Language Processing, and intelligent recommendation techniques**, SkillBridge aims to transform career preparation into a structured, data-driven process.
 
 ---
 
-## 2. TECHNICAL ARCHITECTURE
+## Table of Contents
 
-I want the project to be software-engineering focused, with strong emphasis on C++, algorithms, and problem-solving.
-
-Use the following architecture:
-
-### Frontend
-- React.js
-- JavaScript
-- CSS or Tailwind CSS
-- Chart.js or Recharts for visualizations
-
-### Backend
-- Python
-- FastAPI
-- REST APIs
-
-### Algorithmic Engine
-- C++ for core algorithmic operations.
-- Modular C++ implementation.
-- Clear separation between algorithms and API logic.
-
-### NLP and Machine Learning
-- Python
-- Scikit-learn
-- TF-IDF
-- Cosine Similarity
-- Text preprocessing and skill extraction.
-
-### Database
-- PostgreSQL preferred.
-- SQLAlchemy for database integration.
-
-### Development
-- Git and GitHub.
-- Modular folder structure.
-- Environment variables for configuration.
-
-You may make sensible engineering decisions where necessary, but explain them in the documentation.
-
-Do not simply create empty files for technologies. Every technology listed as implemented must have a genuine purpose in the application.
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Our Solution](#our-solution)
+- [Key Features](#key-features)
+- [System Architecture](#system-architecture)
+- [Technology Stack](#technology-stack)
+- [Core Algorithms](#core-algorithms)
+- [Project Workflow](#project-workflow)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Future Enhancements](#future-enhancements)
+- [Technical Highlights](#technical-highlights)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## 3. CORE FEATURES TO IMPLEMENT
+## Overview
 
-### MODULE 1: Resume Analyzer
+Choosing a career path is only the first step. Understanding the skills required to reach that goal is often much harder.
 
-Build a resume upload system supporting PDF and DOCX files.
+Students frequently struggle to determine:
+- Whether their current technical skills match industry expectations.
+- Which skills they are missing for a particular job role.
+- Which technologies they should prioritize learning.
+- How to build a structured learning plan.
+- Which practical projects can strengthen their profiles.
 
-Implement:
-- Resume text extraction.
-- Text preprocessing.
-- Technical skill identification.
-- Keyword extraction.
-- Categorization of skills.
-- Structured output of detected skills.
+SkillBridge addresses these challenges through resume analysis, skill matching, gap detection, and personalized roadmap generation.
 
-Create a modular skill extraction pipeline.
+The platform is designed to help students make informed decisions about their technical growth and career preparation.
 
-### MODULE 2: Job Role and Skill Database
+## Problem Statement
 
-Create a structured database of technical job roles, including examples such as:
+There is often a disconnect between what students learn academically and what employers expect from candidates.
 
-- Software Development Engineer
-- Backend Developer
-- Frontend Developer
-- Data Scientist
-- Machine Learning Engineer
-- Computer Vision Engineer
-- Data Analyst
-- DevOps Engineer
+Traditional career preparation can involve manually comparing resumes with job descriptions, searching for learning resources, and deciding which skills to prioritize.
 
-Each role should have:
-- Required technical skills.
-- Preferred skills.
-- Skill categories.
-- Relative skill importance.
+This process can be time-consuming, confusing, and unstructured.
 
-Use a structured dataset that can be extended easily.
+SkillBridge aims to make this process more systematic by translating a student's existing skill set into actionable recommendations.
 
-Do not rely on fake live job-market data. Clearly identify the role requirements as curated sample data.
+## Our Solution
 
-### MODULE 3: Intelligent Skill Gap Analysis
+SkillBridge follows a structured approach:
 
-This is one of the most important parts of the project.
+1. **Analyze:** Extract technical skills from a student's resume.
+2. **Compare:** Match existing skills against the requirements of a selected career role.
+3. **Identify:** Detect missing skills and areas for improvement.
+4. **Prioritize:** Rank skill gaps based on importance and relevance.
+5. **Plan:** Generate a personalized learning roadmap.
+6. **Recommend:** Suggest practical projects to strengthen missing skills.
 
-Compare:
-1. Skills extracted from the uploaded resume.
-2. Skills required for the selected target role.
+The goal is not simply to provide a compatibility score, but to explain what a student can do next to become better prepared for their target role.
 
-Calculate:
-- Matched skills.
-- Missing skills.
-- Additional skills.
-- Overall role alignment percentage.
-- Category-wise skill coverage.
+---
 
-Implement weighted skill matching rather than relying only on the number of matching keywords.
+## Key Features
 
-Explain the scoring methodology and make it transparent to users.
+### 1. Smart Resume Analyzer
+- Upload resumes in PDF or DOCX format.
+- Extract and preprocess resume text.
+- Identify relevant technical skills and keywords.
+- Organize extracted skills into structured categories.
 
-### MODULE 4: C++ ALGORITHMIC ENGINE
+### 2. Intelligent Skill Gap Analysis
+- Compare existing skills with target-role requirements.
+- Identify matched and missing skills.
+- Calculate a weighted role-alignment score.
+- Highlight areas that require improvement.
 
-This module should demonstrate strong C++ and Data Structures and Algorithms knowledge.
+### 3. Personalized Learning Roadmap
+- Generate a structured learning path.
+- Prioritize important missing skills.
+- Consider prerequisite relationships between skills.
+- Organize recommendations into a logical learning sequence.
 
-Implement meaningful algorithmic functionality in C++.
+### 4. Project Recommendation Engine
+- Recommend practical projects based on skill gaps.
+- Match projects with relevant technical skills.
+- Provide difficulty levels and expected learning outcomes.
 
-Include:
+### 5. Career Readiness Dashboard
+- Display skill coverage and role alignment.
+- Visualize matched and missing skills.
+- Present learning recommendations.
+- Provide a clear overview of career preparation progress.
 
-**A. Graph-Based Skill Dependency System**
-- Represent skills as nodes in a directed graph.
-- Represent prerequisite relationships as directed edges.
-- Allow learning paths to respect prerequisites.
+---
 
-**B. Shortest Learning Path**
-- Implement Dijkstra's algorithm to determine a suitable learning path when edge costs are defined.
-- Explain how the graph is constructed and how the algorithm works.
+## System Architecture
 
-**C. Priority-Based Skill Ranking**
-- Use priority queues to prioritize skills based on importance, relevance, and gaps.
+The proposed architecture separates the frontend, backend, NLP processing, and algorithmic engine into independent modules.
 
-**D. Optimization and Roadmap Generation**
-- Generate a learning sequence that prioritizes important missing skills.
-- Avoid recommending advanced skills before their prerequisites.
+```mermaid
+flowchart TD
+    A[Student] --> B[React Frontend]
+    B --> C[FastAPI Backend]
+    C --> D[Resume Processing]
+    D --> E[Python NLP Engine]
+    E --> F[Skill Extraction]
+    F --> G[Skill Gap Analysis]
+    G --> H[C++ Algorithmic Engine]
+    H --> I[Skill Prioritization]
+    H --> J[Graph-Based Learning Path]
+    G --> K[Project Recommendation Engine]
+    I --> L[Personalized Roadmap]
+    J --> L
+    K --> M[Dashboard]
+    L --> M
+    M --> B
+```
 
-Separate the C++ implementations into appropriate source and header files.
+*Architecture represents the planned system design and should be updated to reflect the final implementation.*
 
-Provide a clean interface for communication between Python and C++.
+---
 
-Use subprocess execution or another appropriate integration method. Document the choice.
+## Technology Stack
 
-Do not create decorative C++ files that are never used.
+| Category | Technologies |
+|---|---|
+| Core Programming | C++, Python |
+| Frontend | React.js, JavaScript, CSS |
+| Backend | Python, FastAPI |
+| NLP | Scikit-learn, TF-IDF |
+| Similarity Analysis | Cosine Similarity |
+| Algorithms | Dijkstra's Algorithm, Graph Traversal, Priority Queues |
+| Database | PostgreSQL, SQLAlchemy |
+| Visualization | Chart.js / Recharts |
+| Version Control | Git, GitHub |
 
-### MODULE 5: Personalized Learning Roadmap
+---
 
-Generate a personalized roadmap based on:
-- Target job role.
-- Existing skills.
-- Missing skills.
-- Skill importance.
-- Prerequisite relationships.
+## Core Algorithms
 
-For every recommended skill, show:
-- Why it is recommended.
-- Its importance.
-- Its prerequisites.
-- Suggested learning order.
-- Estimated learning effort, clearly labelled as an estimate.
+A major focus of SkillBridge is the use of algorithmic problem-solving to generate meaningful learning recommendations.
 
-Create a structured roadmap that students can actually follow.
+### 1. TF-IDF (Term Frequency–Inverse Document Frequency)
 
-### MODULE 6: Project Recommendation Engine
+Used to represent textual information from resumes and job descriptions.
 
-Recommend practical projects that help users strengthen their missing skills.
+TF-IDF helps identify terms that are important within a document while reducing the influence of overly common words.
+
+### 2. Cosine Similarity
+
+Used to compare textual representations of resumes and job descriptions.
+
+It measures the similarity between two vectors:
+
+\[
+\text{Cosine Similarity}(A,B)=
+\frac{A\cdot B}{\|A\|\|B\|}
+\]
+
+### 3. Graph-Based Skill Dependency System
+
+Skills can have prerequisite relationships.
 
 For example:
-- Missing SQL → Database Management Project.
-- Missing DSA → Algorithm Visualizer.
-- Missing Computer Vision → Object Detection Project.
-- Missing Backend Development → REST API Project.
 
-Build a curated project dataset with:
-- Project title.
-- Description.
-- Relevant skills.
-- Difficulty.
-- Expected learning outcomes.
+```mermaid
+flowchart TD
+    A[Programming Fundamentals] --> B[Data Structures]
+    B --> C[Algorithms]
+    C --> D[Advanced Problem Solving]
+    A --> E[Python]
+    E --> F[Machine Learning]
+    F --> G[Computer Vision]
+```
 
-Recommendations must be connected to the user's identified skill gaps.
+A graph-based representation helps organize skills into logical learning sequences.
 
-### MODULE 7: Dashboard
+### 4. Dijkstra's Shortest Path Algorithm
 
-Create a modern, professional dashboard displaying:
+Dijkstra's algorithm can be used to identify a minimum-cost learning path through a weighted skill dependency graph.
 
-- Resume analysis summary.
-- Target career role.
-- Role alignment percentage.
-- Matched skills.
-- Missing skills.
-- Skill category breakdown.
-- Recommended learning roadmap.
-- Suggested projects.
+This allows the roadmap engine to consider the estimated effort or cost associated with moving between skills.
 
-Use charts and clear visual indicators.
+### 5. Priority Queues
 
-The dashboard should look like a polished software product rather than a basic college assignment.
+Priority queues can rank missing skills according to importance, relevance, and role requirements.
+
+This helps students focus on high-impact skills first.
+
+*The algorithms above describe the intended technical approach. Their implementation status should be verified against the actual source code.*
 
 ---
 
-## 4. UI/UX REQUIREMENTS
+## Project Workflow
 
-Create a clean, modern, professional interface.
-
-Design direction:
-- Minimal and elegant.
-- Professional SaaS-style dashboard.
-- Consistent spacing and typography.
-- Responsive layout.
-- Clear navigation.
-- Attractive cards and charts.
-- Good visual hierarchy.
-
-Required pages:
-
-1. Landing Page
-2. Resume Upload Page
-3. Target Role Selection
-4. Skill Gap Analysis Dashboard
-5. Personalized Learning Roadmap
-6. Project Recommendations
-
-Make sure navigation works and all pages are connected.
-
-Include loading states, error messages, empty states, and input validation.
-
-Do not create buttons that do nothing.
+```mermaid
+flowchart TD
+    A([Start]) --> B[Upload Resume]
+    B --> C[Extract Resume Text]
+    C --> D[Identify Technical Skills]
+    D --> E[Select Target Job Role]
+    E --> F[Retrieve Required Skills]
+    F --> G[Compare Existing and Required Skills]
+    G --> H[Calculate Skill Alignment]
+    H --> I[Identify Missing Skills]
+    I --> J[Prioritize Skill Gaps]
+    J --> K[Generate Learning Roadmap]
+    K --> L[Recommend Relevant Projects]
+    L --> M[Display Career Dashboard]
+    M --> N([End])
+```
 
 ---
 
-## 5. DATABASE DESIGN
+## Project Structure
 
-Create an appropriate database schema.
+The intended modular structure is:
 
-Include tables or models for:
-- Users, if authentication is implemented.
-- Job roles.
-- Skills.
-- Role-skill mappings.
-- Skill prerequisites.
-- Project recommendations.
-- Resume analysis records.
-- Roadmap records, where appropriate.
-
-Add sample seed data so the application can be tested immediately.
-
-Use migrations if appropriate.
-
-If authentication is not necessary for the first functional version, do not waste time building unnecessary complexity.
-
----
-
-## 6. PROJECT STRUCTURE
-
-Create a professional, modular folder structure.
-
-An example structure:
-
+```text
 SkillBridge/
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── hooks/
-│   │   └── assets/
-│   └── package.json
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── services/
+│       ├── hooks/
+│       └── assets/
 │
 ├── backend/
 │   ├── app/
@@ -305,8 +250,7 @@ SkillBridge/
 ├── cpp_engine/
 │   ├── include/
 │   ├── src/
-│   ├── CMakeLists.txt
-│   └── README.md
+│   └── CMakeLists.txt
 │
 ├── data/
 │   ├── skills.json
@@ -315,160 +259,162 @@ SkillBridge/
 │
 ├── docs/
 │
-├── .gitignore
 ├── .env.example
+├── .gitignore
 ├── README.md
 └── LICENSE
-
-You can improve this structure if there is a better engineering approach.
-
----
-
-## 7. TESTING AND VALIDATION
-
-Do not just write code and assume it works.
-
-Test:
-- Resume upload and extraction.
-- Skill extraction.
-- Skill matching.
-- Role alignment calculations.
-- C++ algorithm execution.
-- Graph traversal.
-- Dijkstra's algorithm.
-- Priority queue operations.
-- Roadmap generation.
-- Project recommendations.
-- Backend API endpoints.
-- Frontend integration.
-
-Add meaningful unit tests.
-
-Fix errors discovered during testing.
-
-Verify that the frontend and backend communicate correctly.
+```
 
 ---
 
-## 8. README.md – CREATE AFTER BUILDING THE PROJECT
+## Getting Started
 
-Once the application is implemented and tested, create a comprehensive professional README.md.
+### Prerequisites
 
-It must include:
+Install the following tools:
 
-1. Project title and tagline.
-2. Overview.
-3. Problem statement.
-4. Proposed solution.
-5. Key features.
-6. Technical architecture.
-7. Technology stack.
-8. Folder structure.
-9. Algorithms and their applications.
-10. System architecture diagram.
-11. User workflow diagram.
-12. Data flow diagram.
-13. Installation instructions.
-14. Environment setup.
-15. Database setup.
-16. Running the frontend.
-17. Running the backend.
-18. Building and running the C++ engine.
-19. API documentation.
-20. Testing instructions.
-21. Screenshots.
-22. Future enhancements.
-23. Challenges and engineering decisions.
-24. Contributing guidelines.
-25. License.
+- Git
+- Python 3.x
+- Node.js and npm
+- C++ compiler supporting C++17 or later
+- CMake
+- PostgreSQL, if using the database-backed configuration
 
-Use Mermaid diagrams for architecture and workflows.
+### 1. Clone the Repository
 
-The README must describe the actual implemented project, not an imaginary version of it.
+```bash
+git clone https://github.com/ArshiyaTyagii/SkillBridge-Skill-Gap-Analysis-and-Career-Roadmap.git
 
-Add accurate GitHub badges and a table of contents.
+cd SkillBridge-Skill-Gap-Analysis-and-Career-Roadmap
+```
 
-Make it visually polished and recruiter-friendly.
+### 2. Backend Setup
+
+```bash
+cd backend
+
+python -m venv venv
+```
+
+Activate the virtual environment:
+
+**macOS / Linux**
+```bash
+source venv/bin/activate
+```
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Start the backend:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+### 3. Frontend Setup
+
+Open a new terminal:
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+### 4. C++ Engine Setup
+
+```bash
+cd cpp_engine
+
+mkdir build
+cd build
+
+cmake ..
+
+cmake --build .
+```
+
+Run the compiled executable using the name and path generated by the build configuration.
+
+### 5. Environment Configuration
+
+Create a `.env` file using `.env.example` as a reference.
+
+Configure database credentials and other required environment variables.
+
+**Note:** These are intended setup instructions. Confirm the actual filenames, commands, and configuration before running them.
 
 ---
 
-## 9. SDE INTERNSHIP PORTFOLIO POSITIONING
+## Future Enhancements
 
-This project should demonstrate my abilities in:
+- Integration with live job descriptions and industry skill requirements.
+- More advanced NLP-based resume understanding.
+- Support for additional career domains.
+- Progress tracking and roadmap completion analytics.
+- Personalized learning resource recommendations.
+- Improved recommendation algorithms.
+- User accounts and saved career roadmaps.
+- More detailed career-readiness insights.
 
-- C++ programming.
+---
+
+## Technical Highlights
+
+SkillBridge is designed to demonstrate practical software engineering concepts through:
+
+- Modular C++ development.
 - Data Structures and Algorithms.
-- Graph algorithms.
-- Optimization.
-- Python programming.
-- NLP and machine learning.
-- REST API development.
-- Database design.
-- Software architecture.
-- Problem-solving.
+- Graph-based dependency modeling.
+- Shortest-path algorithms.
+- Priority-based optimization.
+- Python-based NLP processing.
+- REST API architecture.
+- Database integration.
+- Frontend-backend communication.
+- Data visualization.
 
-I want an interviewer to understand that I have worked on a meaningful engineering problem and implemented actual algorithms to solve it.
-
-Avoid making this look like a simple AI wrapper or a generic CRUD application.
-
-The C++ engine should be a genuine, integrated component of the application.
+The project emphasizes the connection between algorithmic thinking and practical software development.
 
 ---
 
-## 10. GITHUB REPOSITORY CREATION
+## Contributing
 
-After implementation and testing:
+Contributions, suggestions, and improvements are welcome.
 
-1. Initialize Git if required.
-2. Create a clean .gitignore.
-3. Ensure no credentials, secrets, temporary files, or unnecessary build artifacts are committed.
-4. Create meaningful commits where practical.
-5. Create a PUBLIC GitHub repository named:
-
-SkillBridge-Skill-Gap-Analysis-and-Career-Roadmap
-
-6. Push the complete project to my GitHub account:
-
-https://github.com/ArshiyaTyagii
-
-7. Push the README.md and all necessary source files.
-8. Verify that the repository is public and the files are visible.
-9. Provide the final GitHub repository URL.
-
-If GitHub authentication or permissions are unavailable, complete the local project and tell me exactly what action I need to take. Never claim that the repository was published unless you verify it.
+1. Fork the repository.
+2. Create a feature branch.
+3. Implement your changes.
+4. Test your implementation.
+5. Submit a pull request.
 
 ---
 
-## 11. EXECUTION RULES
+## Author
 
-These instructions are important:
+**Arshiya Tyagi**
 
-- Build the complete project from scratch.
-- Do not stop at planning or generating a project proposal.
-- Do not merely give me code snippets; create the actual files.
-- Do not leave core modules as TODOs or empty placeholders.
-- Prioritize a working end-to-end application over unnecessary complexity.
-- Keep the code modular, readable, and maintainable.
-- Use meaningful variable and function names.
-- Add comments where algorithmic logic needs explanation.
-- Avoid unnecessary dependencies.
-- Test before documenting.
-- Do not fabricate test results or claim features work without verification.
-- Do not overwrite unrelated files.
-- If a technical decision is necessary, choose a sensible default and continue rather than repeatedly asking me for approval.
+Computer Engineering Student | Aspiring Software Engineer
 
-### FINAL DELIVERABLES
+GitHub: [@ArshiyaTyagii](https://github.com/ArshiyaTyagii)
 
-I expect:
+---
 
-1. A complete working SkillBridge application.
-2. A functional React frontend.
-3. A functional Python backend.
-4. An integrated C++ algorithmic engine.
-5. Database schema and sample data.
-6. Tests and verified execution instructions.
-7. A polished README.md.
-8. A public GitHub repository.
-9. A final summary of implemented features, technologies, tests performed, and the repository URL.
+## License
 
-**Start by inspecting the current workspace, then build the entire application. Do not stop after presenting an implementation plan.**
+This project is intended for educational and development purposes. A license should be selected and added to the repository before redistribution.
+
+---
+
+**SkillBridge — Turning skill gaps into actionable career growth.**
